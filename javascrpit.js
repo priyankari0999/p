@@ -22,7 +22,7 @@ function init() {
   view: view
 
 });
-}
+}}
 function panHome(){
   view.animate({
     center : london ,
