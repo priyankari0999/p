@@ -28,7 +28,7 @@ function panHome(){
     center : london ,
     duration: 2000
 
-  });
+  };
 }
 
 window.onload = init;
