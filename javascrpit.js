@@ -3,7 +3,13 @@ var view;
 var map;
 var initialLocations;
 var london;
+function panHome(){
+  view.animate({
+    center : london,
+    duration: 2000
 
+  };
+})
 function init() {
   initialLocations = ol.proj.fromLonHat([41.043316, 28.862457])
   london = ol.proj.fromLonLat([-0.12755,51.507222]);
@@ -25,10 +31,10 @@ function init() {
 }}
 function panHome(){
   view.animate({
-    center : london ,
+    center : london,
     duration: 2000
 
   };
-}
+})
 
 window.onload = init;
